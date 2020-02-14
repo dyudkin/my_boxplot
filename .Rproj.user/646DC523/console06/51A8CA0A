@@ -18,3 +18,69 @@ Maybe you wanted to say 'git add .'?
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git commit
 hint: Waiting for your editor to close the file... [?2004h[KAborting commit due to empty commit message.
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git commit -m "First Commit[K[K[K[K[Kc[K[Kcommit"
+[master (root-commit) ce02bdd] First commit
+ Committer: Daniel Yudkin <danielyudkin@vani-kilakkathis-macbook-3.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 16 files changed, 2777 insertions(+)
+ create mode 100644 .Rproj.user/646DC523/console06/51A8CA0A
+ create mode 100644 .Rproj.user/646DC523/console06/51A8CA0A.env
+ create mode 100644 .Rproj.user/646DC523/console06/INDEX001
+ create mode 100644 .Rproj.user/646DC523/sources/prop/B53816
+ create mode 100644 .Rproj.user/646DC523/sources/prop/F34D5183
+ create mode 100644 .Rproj.user/646DC523/sources/prop/INDEX
+ create mode 100644 .Rproj.user/646DC523/sources/s-E0BBA658/782BDB4F-contents
+ create mode 100644 .Rproj.user/646DC523/sources/s-E0BBA658/8B3B9345
+ create mode 100644 .Rproj.user/646DC523/sources/s-E0BBA658/8B3B9345-contents
+ create mode 100644 .Rproj.user/646DC523/sources/s-E0BBA658/A7586A2D
+ create mode 100644 .Rproj.user/646DC523/sources/s-E0BBA658/A7586A2D-contents
+ create mode 100644 .Rproj.user/646DC523/sources/s-E0BBA658/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 my-boxplot.R
+ create mode 100644 my-boxplot.Rproj
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote add origin remote repository URLhttps://github .com/dyudkin/my-boxplot.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khttps://github.com/dyudkin/my-boxplo t.git[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ https://github.com/dyudkin/my-boxplot.git
+bash: https://github.com/dyudkin/my-boxplot.git: No such file or directory
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ https://github.com/dyudkin/my-boxplot.git[20Pgit remote add origin https://github.com/dyudkin/my-boxpl ot.git
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote -v
+origin	https://github.com/dyudkin/my-boxplot.git (fetch)
+origin	https://github.com/dyudkin/my-boxplot.git (push)
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push -u origin master
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': dyudkin
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://dyudkin@github.com': 
+To https://github.com/dyudkin/my-boxplot.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'https://github.com/dyudkin/my-boxplot.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
