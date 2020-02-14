@@ -84,3 +84,77 @@ To https://github.com/dyudkin/my-boxplot.git
 [33mhint: (e.g., 'git pull ...') before pushing again.[m
 [33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git c[Kcommit m[K-m "First Commit"
+[master 877ea15] First Commit
+ Committer: Daniel Yudkin <danielyudkin@vani-kilakkathis-macbook-3.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 66 insertions(+)
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --set-upstream origin master
+To https://github.com/dyudkin/my-boxplot.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'https://github.com/dyudkin/my-boxplot.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git pull
+warning: no common commits
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/dyudkin/my-boxplot
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git puh[Ksh
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ [Kvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote add origin https://github.com/dyudkin/my-boxpl ot.git
+fatal: remote origin already exists.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --set-upstream origin master
+To https://github.com/dyudkin/my-boxplot.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/dyudkin/my-boxplot.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git init
+Reinitialized existing Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
