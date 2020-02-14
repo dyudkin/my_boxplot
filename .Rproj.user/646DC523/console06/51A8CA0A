@@ -1,0 +1,20 @@
+]0;~/Dropbox/R/my-boxplot[?1034hvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ [Kvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git nit[K[K[Kini[Kit
+Initialized empty Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+	[31m.Rproj.user/[m
+	[31mmy-boxplot.R[m
+	[31mmy-boxplot.Rproj[m
+
+nothing added to commit but untracked files present
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git commit
+hint: Waiting for your editor to close the file... [?2004h[KAborting commit due to empty commit message.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
