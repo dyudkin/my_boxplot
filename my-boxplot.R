@@ -1,17 +1,10 @@
-
-
 require("tidyverse")
 
 # Summarise ---------------------------------------------------------------
 my.summary <-
   function(dataset,
            x,
-           y,
-           xlab = x,
-           ylab = y,
-           width = .1,
-           height = .1,
-           ...) {
+           y) {
     quo_x <- sym(x)
     quo_y <- sym(y)
     summary <- dataset %>% group_by(!!quo_x) %>%
@@ -102,6 +95,8 @@ my.boxplot <-
     print(lm)
     return(graph)
   }
+
+my.boxplot(mtcars, "cyl", "carb", points = "count")
 
 
 # Graph Settings ----------------------------------------------------------
