@@ -105,6 +105,7 @@ my.boxplot <-
 
 my.boxplot(mtcars, "cyl", "carb", points = F)
 
+getwd()
 
 # Graph Settings ----------------------------------------------------------
 my.graph.settings <- function(x = 0, size = 12) {
