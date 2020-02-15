@@ -84,7 +84,8 @@ my.boxplot <-
           pch = 21,
           color = "black",
           fill = "gray88"
-          )
+          ) +
+        guides(size = F)
       graph$layers <- rev(graph$layers)
     }
     
