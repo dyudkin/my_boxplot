@@ -97,8 +97,6 @@ my.boxplot <-
     return(graph)
   }
 
-my.boxplot(mtcars, "cyl", "carb", points = "count")
-
 
 # Graph Settings ----------------------------------------------------------
 my.graph.settings <- function(x = 0, size = 12) {
