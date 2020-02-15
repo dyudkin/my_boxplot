@@ -158,3 +158,139 @@ To https://github.com/dyudkin/my-boxplot.git
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git init
 Reinitialized existing Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ gg[Kit commit - m "[K[K[K[Km "Second commit"
+[master ab49633] Second commit
+ Committer: Daniel Yudkin <danielyudkin@vani-kilakkathis-macbook-3.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 75 insertions(+), 1 deletion(-)
+ rewrite .Rproj.user/646DC523/console06/INDEX001 (70%)
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --set-upstream origin master
+To https://github.com/dyudkin/my-boxplot.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/dyudkin/my-boxplot.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --set-upstream origin master
+To https://github.com/dyudkin/my-boxplot.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'https://github.com/dyudkin/my-boxplot.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --help
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ 
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add . [K
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git init
+Reinitialized existing Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git fetch
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  50% (1/2)   Unpacking objects: 100% (2/2)   Unpacking objects: 100% (2/2), done.
+From https://github.com/dyudkin/my-boxplot
+   5d9bb1d..ecce527  master     -> origin/master
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git checkout
+M	.Rproj.user/646DC523/console06/51A8CA0A
+M	.Rproj.user/646DC523/console06/INDEX001
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ hard pull
+bash: hard: command not found
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ hard push
+bash: hard: command not found
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git p[Kbard [K[K[K[K[K[K[K[K[Kgit push --force
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote set-url origin https://github.com/AnneMarieHar m/deliverable_one.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K https://github.com/dyudkin/my-b oxplot.git
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git init
+Reinitialized existing Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add.[K .
