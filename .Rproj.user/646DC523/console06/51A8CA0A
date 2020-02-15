@@ -294,3 +294,177 @@ To push the current branch and set the remote as upstream, use
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git init
 Reinitialized existing Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
 ]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add.[K .
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git commit -m "First commit"
+[master 5b21be1] First commit
+ Committer: Daniel Yudkin <danielyudkin@vani-kilakkathis-macbook-3.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 138 insertions(+), 2 deletions(-)
+ rewrite .Rproj.user/646DC523/console06/INDEX001 (70%)
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote add origin https://github.com/dyudkin/my_boxpl ot.git
+fatal: remote origin already exists.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote -v
+origin	https://github.com/dyudkin/my-boxplot.git (fetch)
+origin	https://github.com/dyudkin/my-boxplot.git (push)
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/dyudkin/my-boxplot.git/' not found
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git checkout
+M	.Rproj.user/646DC523/console06/51A8CA0A
+M	.Rproj.user/646DC523/sources/prop/F34D5183
+M	.Rproj.user/646DC523/sources/s-E0BBA658/A7586A2D
+M	.Rproj.user/646DC523/sources/s-E0BBA658/A7586A2D-contents
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --force
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push -u origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit remote add origin https://github.com/dyudkin/my_boxpl ot.git
+fatal: remote origin already exists.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/dyudkin/my-boxplot.git/' not found
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git init
+Reinitialized existing Git repository in /Users/danielyudkin/Dropbox/R/my-boxplot/.git/
+git check
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar commands are
+	checkout
+	check-attr
+	cherry
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git branch
+[?1h=* [32mmaster[m[m
+[K[?1l>]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/646DC523/console06/51A8CA0A[m
+	[31mmodified:   .Rproj.user/646DC523/console06/51A8CA0A.env[m
+	[31mmodified:   .Rproj.user/646DC523/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/646DC523/sources/prop/B53816[m
+	[31mmodified:   .Rproj.user/646DC523/sources/prop/F34D5183[m
+	[31mdeleted:    .Rproj.user/646DC523/sources/s-E0BBA658/782BDB4F-contents[m
+	[31mdeleted:    .Rproj.user/646DC523/sources/s-E0BBA658/8B3B9345[m
+	[31mdeleted:    .Rproj.user/646DC523/sources/s-E0BBA658/8B3B9345-contents[m
+	[31mdeleted:    .Rproj.user/646DC523/sources/s-E0BBA658/A7586A2D[m
+	[31mdeleted:    .Rproj.user/646DC523/sources/s-E0BBA658/A7586A2D-contents[m
+	[31mdeleted:    .Rproj.user/646DC523/sources/s-E0BBA658/lock_file[m
+	[31mmodified:   my-boxplot.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add my-boxplot.R
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git commit -m "First commit"
+[master a6344dd] First commit
+ Committer: Daniel Yudkin <danielyudkin@vani-kilakkathis-macbook-3.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --set-upstream origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/dyudkin/my-boxplot.git/' not found
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote add origin https://github.com/dyudkin/my_boxpl ot.git
+fatal: remote origin already exists.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote rm origin
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git remote add origin https://github.com/dyudkin/my_boxpl ot.git
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git push --set-upstream origin master
+Enumerating objects: 47, done.
+Counting objects:   2% (1/47)   Counting objects:   4% (2/47)   Counting objects:   6% (3/47)   Counting objects:   8% (4/47)   Counting objects:  10% (5/47)   Counting objects:  12% (6/47)   Counting objects:  14% (7/47)   Counting objects:  17% (8/47)   Counting objects:  19% (9/47)   Counting objects:  21% (10/47)   Counting objects:  23% (11/47)   Counting objects:  25% (12/47)   Counting objects:  27% (13/47)   Counting objects:  29% (14/47)   Counting objects:  31% (15/47)   Counting objects:  34% (16/47)   Counting objects:  36% (17/47)   Counting objects:  38% (18/47)   Counting objects:  40% (19/47)   Counting objects:  42% (20/47)   Counting objects:  44% (21/47)   Counting objects:  46% (22/47)   Counting objects:  48% (23/47)   Counting objects:  51% (24/47)   Counting objects:  53% (25/47)   Counting objects:  55% (26/47)   Counting objects:  57% (27/47)   Counting objects:  59% (28/47)   Counting objects:  61% (29/47)   Counting objects:  63% (30/47)   Counting objects:  65% (31/47)   Counting objects:  68% (32/47)   Counting objects:  70% (33/47)   Counting objects:  72% (34/47)   Counting objects:  74% (35/47)   Counting objects:  76% (36/47)   Counting objects:  78% (37/47)   Counting objects:  80% (38/47)   Counting objects:  82% (39/47)   Counting objects:  85% (40/47)   Counting objects:  87% (41/47)   Counting objects:  89% (42/47)   Counting objects:  91% (43/47)   Counting objects:  93% (44/47)   Counting objects:  95% (45/47)   Counting objects:  97% (46/47)   Counting objects: 100% (47/47)   Counting objects: 100% (47/47), done.
+Delta compression using up to 4 threads
+Compressing objects:   2% (1/44)   Compressing objects:   4% (2/44)   Compressing objects:   6% (3/44)   Compressing objects:   9% (4/44)   Compressing objects:  11% (5/44)   Compressing objects:  13% (6/44)   Compressing objects:  15% (7/44)   Compressing objects:  18% (8/44)   Compressing objects:  20% (9/44)   Compressing objects:  22% (10/44)   Compressing objects:  25% (11/44)   Compressing objects:  27% (12/44)   Compressing objects:  29% (13/44)   Compressing objects:  31% (14/44)   Compressing objects:  34% (15/44)   Compressing objects:  36% (16/44)   Compressing objects:  38% (17/44)   Compressing objects:  40% (18/44)   Compressing objects:  43% (19/44)   Compressing objects:  45% (20/44)   Compressing objects:  47% (21/44)   Compressing objects:  50% (22/44)   Compressing objects:  52% (23/44)   Compressing objects:  54% (24/44)   Compressing objects:  56% (25/44)   Compressing objects:  59% (26/44)   Compressing objects:  61% (27/44)   Compressing objects:  63% (28/44)   Compressing objects:  65% (29/44)   Compressing objects:  68% (30/44)   Compressing objects:  70% (31/44)   Compressing objects:  72% (32/44)   Compressing objects:  75% (33/44)   Compressing objects:  77% (34/44)   Compressing objects:  79% (35/44)   Compressing objects:  81% (36/44)   Compressing objects:  84% (37/44)   Compressing objects:  86% (38/44)   Compressing objects:  88% (39/44)   Compressing objects:  90% (40/44)   Compressing objects:  93% (41/44)   Compressing objects:  95% (42/44)   Compressing objects:  97% (43/44)   Compressing objects: 100% (44/44)   Compressing objects: 100% (44/44), done.
+Writing objects:   2% (1/47)   Writing objects:   4% (2/47)   Writing objects:   6% (3/47)   Writing objects:   8% (4/47)   Writing objects:  10% (5/47)   Writing objects:  12% (6/47)   Writing objects:  14% (7/47)   Writing objects:  17% (8/47)   Writing objects:  19% (9/47)   Writing objects:  21% (10/47)   Writing objects:  23% (11/47)   Writing objects:  27% (13/47)   Writing objects:  29% (14/47)   Writing objects:  31% (15/47)   Writing objects:  34% (16/47)   Writing objects:  36% (17/47)   Writing objects:  38% (18/47)   Writing objects:  40% (19/47)   Writing objects:  42% (20/47)   Writing objects:  46% (22/47)   Writing objects:  48% (23/47)   Writing objects:  51% (24/47)   Writing objects:  53% (25/47)   Writing objects:  55% (26/47)   Writing objects:  57% (27/47)   Writing objects:  59% (28/47)   Writing objects:  61% (29/47)   Writing objects:  63% (30/47)   Writing objects:  65% (31/47)   Writing objects:  68% (32/47)   Writing objects:  70% (33/47)   Writing objects:  72% (34/47)   Writing objects:  74% (35/47)   Writing objects:  76% (36/47)   Writing objects:  78% (37/47)   Writing objects:  80% (38/47)   Writing objects:  82% (39/47)   Writing objects:  85% (40/47)   Writing objects:  87% (41/47)   Writing objects:  89% (42/47)   Writing objects:  91% (43/47)   Writing objects:  93% (44/47)   Writing objects:  95% (45/47)   Writing objects:  97% (46/47)   Writing objects: 100% (47/47)   Writing objects: 100% (47/47), 21.24 KiB | 207.00 KiB/s, done.
+Total 47 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolving deltas:  50% (4/8)[Kremote: Resolving deltas:  75% (6/8)[Kremote: Resolving deltas:  87% (7/8)[Kremote: Resolving deltas: 100% (8/8)[Kremote: Resolving deltas: 100% (8/8), done.[K
+To https://github.com/dyudkin/my_boxplot.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/Dropbox/R/my-boxplotvani-kilakkathis-macbook-3:my-boxplot danielyudkin$ git add .
