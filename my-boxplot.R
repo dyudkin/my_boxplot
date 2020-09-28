@@ -4,9 +4,11 @@ require(tidyverse)
 my_summary <-
   function(dataset,
            x,
-           y) {
+           y,
+           ci) {
     quo_x <- sym(x)
     quo_y <- sym(y)
+    ci_two_tailed <- (1 - ci)/2
     summary <- dataset %>% group_by(!!quo_x) %>%
       summarise(
         sd = sd(!!quo_y, na.rm = T),
@@ -15,13 +17,15 @@ my_summary <-
         n = sum(!is.na(!!quo_y))
       ) %>%
       mutate(
-        min = mean - qt(.975, n - 1) * se,
+        min = mean - qt(1 - ci_two_tailed, n - 1) * se,
         lower = mean - se,
         upper = mean + se,
-        max = mean + qt(.975, n - 1) * se
+        max = mean + qt(1 - ci_two_tailed, n - 1) * se
       )
     return(summary)
   }
+
+
 
 
 # Graph Settings ----------------------------------------------------------
@@ -61,12 +65,13 @@ my_boxplot <-
            fill = "#2171b5",
            alpha = .8,
            jitter.height = .1,
+           ci = .95,
            points = "dotplot",
            text.angle = 0,
            text.size = 12) {
     quo_x <- sym(x)
     quo_y <- sym(y)
-    summary <- my_summary(data, x, y)
+    summary <- my_summary(data, x, y, ci = ci)
     graph <-
       ggplot(summary, aes_string(x = x,
                                    y = "mean")) +
