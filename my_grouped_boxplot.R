@@ -1,5 +1,4 @@
 require(tidyverse)
-?tidyverse
 
 # Summarise ---------------------------------------------------------------
 my_grouped_summary <-
