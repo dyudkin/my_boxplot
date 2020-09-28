@@ -1,3 +1,5 @@
+require(tidyverse)
+
 # Summarise ---------------------------------------------------------------
 my_summary <-
   function(dataset,
@@ -23,9 +25,9 @@ my_summary <-
 
 
 # Graph Settings ----------------------------------------------------------
-my_graph_settings <- function(x = 0, size = 12) {
+my_graph_settings <- function(text.angle, text.size) {
   my_graph_settings <-
-    theme_bw(base_size = size) +
+    theme_bw(base_size = text.size) +
     theme(
       panel.border = element_blank(),
       axis.line = element_line(colour = "black"),
@@ -39,9 +41,9 @@ my_graph_settings <- function(x = 0, size = 12) {
       axis.text =  element_text(colour = "black"),
       axis.title = element_text(face = "bold")
     )
-  if (x > 0) {
+  if (text.angle > 0) {
     my_graph_settings <-
-      my_graph_settings + theme(axis.text.x = element_text(angle = x, hjust = 1))
+      my_graph_settings + theme(axis.text.x = element_text(angle = text.angle, hjust = 1))
   }
   return(my_graph_settings)
 }
@@ -60,7 +62,8 @@ my_boxplot <-
            alpha = .8,
            jitter.height = .1,
            points = "dotplot",
-           ...) {
+           text.angle = 0,
+           text.size = 12) {
     quo_x <- sym(x)
     quo_y <- sym(y)
     summary <- my_summary(data, x, y)
@@ -82,7 +85,7 @@ my_boxplot <-
       ) +
       ylab(ylab) +
       xlab(xlab) +
-      my_graph_settings(...)
+      my_graph_settings(text.angle, text.size)
     if (points == "dotplot") {
       graph <- graph +
         geom_dotplot (
@@ -123,11 +126,10 @@ my_boxplot <-
           color = "black",
           fill = "gray88"
         )
-      graph$layers <- rev(graph$layers)
-      
       }
     graph$layers <- rev(graph$layers)
     
+    # Get and print ANOVA
     measurevar <- y
     predictor  <- x
     f <- paste(measurevar, predictor, sep = " ~ ")

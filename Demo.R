@@ -100,6 +100,17 @@ ToothGrowth %>% mutate(supp = factor(supp),
                      group = "supp",
                      points = "count")
 
-ggsave("Figure 5.png",
+ggsave("Figure 7a.png",
+       width = 5,
+       height = 5)
+
+ToothGrowth %>% mutate(supp = factor(supp),
+                       dose = factor(dose)) %>% 
+  my_grouped_boxplot(x = "dose",
+                     y = "len",
+                     group = "supp",
+                     points = "jitter")
+
+ggsave("Figure 7b.png",
        width = 5,
        height = 5)
