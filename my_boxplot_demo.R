@@ -1,8 +1,8 @@
 
 # Demo my_boxplot ---------------------------------------------------------
 require(tidyverse)
-source("my-boxplot.R")
-source("my-grouped-boxplot.R")
+source("my_boxplot.R")
+source("my_grouped_boxplot.R")
 
 
 # Figure 1 ----------------------------------------------------------------
@@ -54,22 +54,18 @@ my_boxplot(iris,
 
 # Grouped Boxplot ---------------------------------------------------------
 
-ToothGrowth %>% mutate(supp = factor(supp),
-                       dose = factor(dose)) %>% 
-  my_grouped_boxplot(x = "dose",
-                     y = "len",
-                     group = "supp")
-
-ToothGrowth %>% mutate(supp = factor(supp),
+ToothGrowth %>% mutate(supp = factor(supp, 
+                                     labels = c("Orange Juice", 
+                                                "Ascorbic Acid")),
                        dose = factor(dose)) %>% 
   my_grouped_boxplot(x = "dose",
                      y = "len",
                      group = "supp",
-                     points = "count")
+                     xlab = "Vitamin C Dose (mg/day)",
+                     ylab = "Tooth Length") +
+  labs(fill = "Delivery Method")
 
-ToothGrowth %>% mutate(supp = factor(supp),
-                       dose = factor(dose)) %>% 
-  my_grouped_boxplot(x = "dose",
-                     y = "len",
-                     group = "supp",
-                     points = "jitter")
+
+ggsave("Figure 7.png",
+       width = 6,
+       height = 5)
